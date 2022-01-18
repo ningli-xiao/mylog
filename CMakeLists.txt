@@ -93,6 +93,7 @@ add_library(mylog::mylog ALIAS mylog)
 
 target_include_directories(mylog PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/include>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/include/spdlog>"
+        "$<BUILD_INTERFACE:${CMAKE_CURRENT_LIST_DIR}/>"
         "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>")
 target_link_libraries(mylog PUBLIC Threads::Threads)
 
